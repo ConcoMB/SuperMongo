@@ -1,5 +1,4 @@
-SuperMongo
-==
+# SuperMongo
 
 Para conectarse a la base ejecutar en la consola de mongo
 
