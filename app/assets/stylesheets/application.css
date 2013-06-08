@@ -12,3 +12,11 @@
  *= require bootstrap_and_overrides
  *= require_tree .
  */
+
+.indented {
+  margin-left: 2%;
+}
+
+.margined {
+  margin-bottom: 1% !important;
+}

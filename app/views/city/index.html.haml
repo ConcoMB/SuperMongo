@@ -4,6 +4,8 @@
     %li 
       %a{:href => city_path(c)} #{c.name}
 %br/
-%a{:href => new_city_path} new city
+%a{:href => new_city_path}
+  %button.margined.btn.btn-primary new city
 %br/
-%a{:href => new_superhero_path} new superhero
+%a{:href => new_superhero_path}
+  %button.btn.btn-primary new superhero

@@ -1,6 +1,9 @@
 %h2 New city
 = form_for City.new, :url=>url_for(city_index_path) do |f|
-  %strong name:
-  = f.text_field :name, :required => true
-  %br/
-  %input{:type => "submit", :value => "create"}/
+  %table
+    %tr
+      %td
+        %strong name:
+      %td
+        = f.text_field :name, :required => true
+  %input.btn.btn-primary{:type => "submit", :value => "create"}/
