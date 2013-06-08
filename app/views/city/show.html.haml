@@ -1,7 +1,17 @@
 %h2 #{@city.name}
 %h3 Superheroes:
 %ul
-  - @city.superheroes.each do |h|
+  - @city.superheroes.select{|c| c.is_good }.each do |h|
+    %li
+      %strong name: 
+      %span #{h.name}
+      %br/
+      %strong superpower: 
+      %span #{h.superpower}
+      
+%h3 Villans:
+%ul
+  - @city.superheroes.select{|c| !c.is_good }.each do |h|
     %li
       %strong name: 
       %span #{h.name}

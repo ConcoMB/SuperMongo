@@ -9,4 +9,7 @@
   %strong superpower:
   = f.text_field :superpower, :required => true
   %br/
+  %strong is good?:
+  = f.check_box :is_good
+  %br/
   %input{:type => "submit", :value => "create"}/
