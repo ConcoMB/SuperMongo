@@ -1,0 +1,9 @@
+%h2 Cities
+- @cities.each do |c|
+  %ul
+    %li 
+      %a{:href => city_path(c)} #{c.name}
+%br/
+%a{:href => new_city_path} new city
+%br/
+%a{:href => new_superhero_path} new superhero

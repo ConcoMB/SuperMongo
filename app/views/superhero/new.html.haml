@@ -1,0 +1,12 @@
+%h2 New superhero
+= form_for Superhero.new, :url=>url_for(superhero_index_path) do |f|
+  %strong name:
+  = f.text_field :name, :required => true
+  %br
+  %strong city:
+  = select_tag "city", options_from_collection_for_select(@cities, "id", "name"), :prompt => "Select a city"
+  %br
+  %strong superpower:
+  = f.text_field :superpower, :required => true
+  %br/
+  %input{:type => "submit", :value => "create"}/

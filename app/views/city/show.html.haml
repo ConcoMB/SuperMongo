@@ -1,0 +1,11 @@
+%h2 #{@city.name}
+%h3 Superheroes:
+%ul
+  - @city.superheroes.each do |h|
+    %li
+      %strong name: 
+      %span #{h.name}
+      %br/
+      %strong superpower: 
+      %span #{h.superpower}
+      
